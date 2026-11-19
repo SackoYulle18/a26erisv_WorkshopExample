@@ -67,11 +67,7 @@ public class ContinuousMovement : MonoBehaviour
         velocity.x = -velocity.x;
         velocity.y = -velocity.y;
         velocity.z = -velocity.z;
-
-        if (TryGetComponent(out SpriteRenderer sr))
-        {
-            if (velocity.x < 0) sr.flipX = false;
-            else if (velocity.x > 0) sr.flipX = true;
-        }
+        
+        transform.Rotate(Vector2.up, 180f);
     }
 }
