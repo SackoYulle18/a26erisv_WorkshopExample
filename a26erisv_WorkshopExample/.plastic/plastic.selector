@@ -1,0 +1,4 @@
+repository "a26erisv_WorkshopExample/a26erisv_WorkshopExample@5774158750059@cloud"
+  path "/"
+    br "/main"
+    co "/main"
